@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portofolio Kei</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#fff6f8;
+color:#4a2f27;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:#8b5e50;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav h2{
+color:#ffd6e0;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:70px;
+padding:100px 10%;
+flex-wrap:wrap;
+background:linear-gradient(135deg,#ffd6e0,#e8b9a5);
+}
+
+.profile-img{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid white;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.hero-text{
+max-width:520px;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero p{
+margin-bottom:20px;
+}
+
+.btn{
+padding:12px 25px;
+background:#8b5e50;
+color:white;
+border-radius:25px;
+text-decoration:none;
+transition:.3s;
+}
+
+.btn:hover{
+background:#6f463b;
+transform:scale(1.05);
+}
+
+/* SECTION */
+
+section{
+padding:80px 10%;
+}
+
+.title{
+text-align:center;
+font-size:32px;
+margin-bottom:40px;
+}
+
+.about{
+text-align:center;
+max-width:800px;
+margin:auto;
+line-height:1.7;
+}
+
+/* EDUCATION */
+
+.education{
+max-width:800px;
+margin:auto;
+}
+
+.edu-item{
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* SKILLS */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.skill{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+transition:.3s;
+}
+
+.skill:hover{
+transform:translateY(-6px);
+}
+
+/* PORTFOLIO */
+
+.portfolio{
+background:#ffe9ef;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.project{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+transition:.3s;
+}
+
+.project:hover{
+transform:translateY(-8px);
+}
+
+.project img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.project-content{
+padding:20px;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+.contact-buttons{
+margin-top:20px;
+}
+
+.contact-buttons a{
+display:inline-block;
+margin:10px;
+padding:12px 22px;
+background:#8b5e50;
+color:white;
+border-radius:30px;
+text-decoration:none;
+transition:.3s;
+}
+
+.contact-buttons a:hover{
+background:#6f463b;
+}
+
+/* FOOTER */
+
+footer{
+background:#8b5e50;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero{
+text-align:center;
+}
+
+.hero h1{
+font-size:32px;
+}
+
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+<h2>Portofolio Kei</h2>
+
+<ul>
+<li><a href="#about">Tentang</a></li>
+<li><a href="#education">Pendidikan</a></li>
+<li><a href="#skills">Keahlian</a></li>
+<li><a href="#portfolio">Project</a></li>
+<li><a href="#contact">Kontak</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<img src="kei.jpg" class="profile-img">
+
+<div class="hero-text">
+
+<h1>Halo, Saya Keisya Affifatus Syifa</h1>
+
+<p>
+Mahasiswa S1 Akuntansi Universitas Gunadarma yang memiliki minat dalam bidang laporan keuangan, analisis keuangan, dan sistem informasi akuntansi.
+</p>
+
+<a href="#portfolio" class="btn">Lihat Project</a>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="title">Tentang Saya</h2>
+
+<p class="about">
+Saya adalah mahasiswa program studi Akuntansi S1 di Universitas Gunadarma yang memiliki ketertarikan dalam bidang akuntansi keuangan, analisis laporan keuangan, serta pengelolaan data keuangan secara sistematis dan terstruktur. 
+Selama masa perkuliahan, saya mempelajari berbagai konsep dasar akuntansi seperti penyusunan laporan keuangan, jurnal akuntansi, neraca, laporan laba rugi, serta analisis keuangan perusahaan. 
+Saya memiliki ketelitian yang tinggi, kemampuan analisis yang baik, serta mampu bekerja secara terstruktur dalam mengolah data keuangan. 
+Saya juga tertarik untuk terus mengembangkan kemampuan dalam penggunaan teknologi seperti spreadsheet dan sistem informasi akuntansi untuk mendukung pekerjaan di bidang keuangan dan akuntansi di masa depan.
+</p>
+
+</section>
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+<h2 class="title">Pendidikan</h2>
+
+<div class="education">
+
+<div class="edu-item">
+<h3>Universitas Gunadarma</h3>
+<p>S1 Akuntansi</p>
+<p>2025 - Sekarang</p>
+<p>Mempelajari akuntansi keuangan, akuntansi manajemen, serta sistem informasi akuntansi.</p>
+</div>
+
+<div class="edu-item">
+<h3>SMK</h3>
+<p>Jurusan : Akuntansi</p>
+<p>2022 - 2025</p>
+<p>Mempelajari dasar ekonomi, akuntansi, dan manajemen.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2 class="title">Keahlian & Minat</h2>
+
+<div class="skills">
+
+<div class="skill">
+<h3>Akuntansi Dasar</h3>
+<p>Memahami proses pencatatan jurnal, buku besar, dan penyusunan laporan keuangan.</p>
+</div>
+
+<div class="skill">
+<h3>Analisis Laporan Keuangan</h3>
+<p>Mampu membaca dan menganalisis laporan keuangan perusahaan.</p>
+</div>
+
+<div class="skill">
+<h3>Microsoft Excel</h3>
+<p>Menggunakan Excel untuk pengolahan data keuangan dan pembuatan laporan.</p>
+</div>
+
+<div class="skill">
+<h3>Sistem Informasi Akuntansi</h3>
+<p>Memahami konsep penggunaan teknologi dalam sistem pencatatan keuangan.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PORTFOLIO -->
+
+<section class="portfolio" id="portfolio">
+
+<h2 class="title">Project</h2>
+
+<div class="projects">
+
+<div class="project">
+<img src="laporan.jpg">
+<div class="project-content">
+<h3>Laporan Keuangan Sederhana</h3>
+<p>Menyusun laporan laba rugi, neraca, dan arus kas menggunakan data transaksi sederhana.</p>
+</div>
+</div>
+
+<div class="project">
+<img src="analisis.jpg">
+<div class="project-content">
+<h3>Analisis Keuangan Perusahaan</h3>
+<p>Menganalisis kinerja keuangan perusahaan menggunakan rasio keuangan.</p>
+</div>
+</div>
+
+<div class="project">
+<img src="jurnal.jpg">
+<div class="project-content">
+<h3>Pencatatan Jurnal Akuntansi</h3>
+<p>Membuat pencatatan transaksi ke dalam jurnal umum hingga buku besar.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+<h2 class="title">Kontak</h2>
+
+<p>Silakan hubungi saya melalui:</p>
+
+<div class="contact-buttons">
+
+<a href="https://instagram.com/keizyaaffa" target="_blank">Instagram</a>
+
+<a href="mailto:kyjperezzz@gmail.com">Email</a>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Keizyaffa & KyjPerez
+</footer>
+
+</body>
+</html>
